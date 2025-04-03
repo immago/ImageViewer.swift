@@ -1,5 +1,6 @@
-ImageViewer.swift
+ImageViewer.swift (KF)
 =======================
+Port from SDWebImage (Obj-c) to Kingfisher (swift)
 
 An easy to use Image Viewer that is inspired by Facebook
 

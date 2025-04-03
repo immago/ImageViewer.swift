@@ -59,7 +59,7 @@ public class ImageCarouselViewController:UIPageViewController, ImageViewerTransi
     private let imageViewerPresentationDelegate: ImageViewerTransitionPresentationManager
     
     public init(
-        sourceView:UIImageView,
+        sourceView:UIImageView? = nil,
         imageDataSource: ImageDataSource?,
         imageLoader: ImageLoader,
         options:[ImageViewerOption] = [],

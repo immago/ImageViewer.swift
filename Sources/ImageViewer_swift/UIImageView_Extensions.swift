@@ -12,7 +12,7 @@ extension UIImageView {
     }
     
     private var vc:UIViewController? {
-        guard let rootVC = UIApplication.shared.keyWindow?.rootViewController
+        guard let rootVC = UIApplication.shared.windows.filter({$0.isKeyWindow}).first?.rootViewController
             else { return nil }
         return rootVC.presentedViewController != nil ? rootVC.presentedViewController : rootVC
     }
